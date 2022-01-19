@@ -1,0 +1,24 @@
+{
+  "courses": [
+    {
+      "name": "a",
+      "description": "b",
+      "id": 1
+    },
+    {
+      "name": "a",
+      "description": "c",
+      "id": 2
+    },
+    {
+      "name": "a",
+      "description": "d",
+      "id": 3
+    },
+    {
+      "name": "b",
+      "description": "a",
+      "id": 4
+    }
+  ]
+}
