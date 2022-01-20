@@ -1,7 +1,7 @@
-import {Routes, Route, BrowserRouter} from "react-router-dom"
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import Navbar from './navbar'
 import Add from './add'
-import Display from "./display"
+import Display from './display'
 
 function MyRoutes(){
     return (

@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import { connect } from 'react-redux'
 import axios from 'axios'
 
 class Add extends Component {
@@ -13,6 +14,11 @@ class Add extends Component {
             method: 'post',
             url: 'http://localhost:4000/courses',
             data: {name: this.name, description: this.description}
+        }).then((response) => {
+            this.props.dispatch({
+                type: 'ADD_COURSE',
+                payload: response.data
+            })
         })
     }
     render() {
@@ -28,4 +34,4 @@ class Add extends Component {
     }
 }
 
-export default Add
+export default connect()(Add)
