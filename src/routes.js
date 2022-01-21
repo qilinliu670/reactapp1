@@ -1,7 +1,7 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import Navbar from './navbar'
-import Add from './add'
-import Display from './display'
+import Foods from './foods'
+import FoodDetails from './foodDetails'
 
 function MyRoutes(){
     return (
@@ -10,8 +10,8 @@ function MyRoutes(){
             <Navbar />
             <br/>
             <Routes>
-                <Route path="/" element={<Add />} />
-                <Route path="/display" element={<Display />} />
+                <Route path="/" element={<Foods />} />
+                <Route path="/details/:id" element={<FoodDetails />} />
             </Routes>
             </BrowserRouter>
                 

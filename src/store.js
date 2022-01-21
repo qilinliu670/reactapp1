@@ -1,17 +1,12 @@
-import { createStore } from 'redux'
+import { createStore, applyMiddleware } from 'redux'
+import createSaga from 'redux-saga'
+import foodReducer from './reducers'
+import RootSaga from './sagas'
 
-var store = createStore((state={}, action) => {
-    switch(action.type) {
-        case 'ADD_COURSE': {
-            state['courses'].push(action.payload)
-            return state
-        }
-        case 'STORE_COURSES': {
-            state['courses'] = action.payload
-            return state
-        }
-        default: return state
-    }
-})
+var sagaMiddleware = createSaga()
+
+var store = createStore(foodReducer, applyMiddleware(sagaMiddleware))
+
+sagaMiddleware.run(RootSaga)
 
 export default store

@@ -1,59 +1,19 @@
 {
-  "courses": [
+  "foods": [
     {
       "name": "a",
-      "description": "b",
+      "description": "a",
       "id": 1
     },
     {
-      "name": "a",
-      "description": "c",
+      "name": "b",
+      "description": "b",
       "id": 2
     },
     {
-      "name": "a",
-      "description": "d",
+      "name": "c",
+      "description": "c",
       "id": 3
-    },
-    {
-      "name": "b",
-      "description": "a",
-      "id": 4
-    },
-    {
-      "name": "b",
-      "description": "b",
-      "id": 5
-    },
-    {
-      "name": "b",
-      "description": "c",
-      "id": 6
-    },
-    {
-      "name": "b",
-      "description": "d",
-      "id": 7
-    },
-    {
-      "name": "c",
-      "description": "a",
-      "id": 8
-    },
-    {
-      "name": "c",
-      "description": "d",
-      "id": 9
-    },
-    {
-      "name": "c",
-      "description": "b",
-      "id": 10
-    },
-    {
-      "name": "c",
-      "description": "c",
-      "id": 11
     }
   ]
 }
