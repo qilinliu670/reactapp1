@@ -1,14 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import MyRoutes from './routes'
-import store from './store'
-import { Provider } from 'react-redux'
+import Products from './products.js'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <MyRoutes />
-    </Provider>
+    <Products/>
   </React.StrictMode>,
   document.getElementById('root')
 )
