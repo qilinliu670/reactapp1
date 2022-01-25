@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Products from './products.js'
+import Countries from './countries.js'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Products/>
+    <Countries/>
   </React.StrictMode>,
   document.getElementById('root')
 )
